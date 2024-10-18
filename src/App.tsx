@@ -8,6 +8,7 @@ import { Clients } from "./pages/clients/Clients"
 import { Register } from "./pages/register/Register"
 import { FormEvent } from "react"
 import { api } from "./lib/axios"
+import { ClientDetails } from "./pages/client-details/ClientDetails"
 
 function App() {
   async function registerClient(event: FormEvent<HTMLFormElement>) {
@@ -58,6 +59,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/clients" element={<Clients />} />
+            <Route path="/clients/:clientId" element={<ClientDetails />} />
             <Route
               path="/register"
               element={<Register registerClient={registerClient} />}

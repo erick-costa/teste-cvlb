@@ -2,6 +2,7 @@ import { Button, Card, Flex, Heading, Separator, Text } from "@radix-ui/themes"
 import { Client } from "../../models/Client"
 import { api } from "../../lib/axios"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export function Clients() {
   const [clients, setClients] = useState<Client[]>([])
@@ -15,13 +16,9 @@ export function Clients() {
     getClients()
   }, [])
 
-  useEffect(() => {
-    console.log(clients)
-  }, [clients])
-
   return (
     <>
-      <Heading mt={"9"}>Lista de clientes</Heading>{" "}
+      <Heading mt={"9"}>Lista de clientes</Heading>
       <Separator my="6" size="4" />
       <Flex wrap="wrap" gap="6">
         {clients.map((client) => (
@@ -33,7 +30,9 @@ export function Clients() {
               {client.email}
             </Text>
             <Separator my="2" size="4" />
-            <Button>Mais informações</Button>
+            <Link to={`/clients/${client.id}`}>
+              <Button>Mais informações</Button>
+            </Link>
           </Card>
         ))}
       </Flex>
