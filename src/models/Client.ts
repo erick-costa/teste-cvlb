@@ -1,4 +1,5 @@
 export interface Client {
+  id: string
   docNumber: string
   name: string
   email: string
