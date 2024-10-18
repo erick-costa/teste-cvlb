@@ -35,6 +35,42 @@
       "state": "Rio de Janeiro",
       "zipCode": "00000000",
       "neighborhood": "São José"
+    },
+    {
+      "id": "a2be",
+      "docNumber": "22222222222",
+      "name": "João da Silva",
+      "email": "joao@email.com",
+      "phone": "51999999999",
+      "birthDate": "2002-02-02",
+      "isEmployee": false,
+      "principal": true,
+      "addressType": "home",
+      "address": "Rua Maria Teste",
+      "number": "89",
+      "complement": "Bloco 2",
+      "city": "Porto Alegre",
+      "state": "Rio Grande do Sul",
+      "zipCode": "11111111",
+      "neighborhood": "São Luis"
+    },
+    {
+      "id": "36c0",
+      "docNumber": "33333333333",
+      "name": "Eduarda Batista",
+      "email": "eduarda@email.com",
+      "phone": "51999999995",
+      "birthDate": "2002-05-05",
+      "isEmployee": true,
+      "principal": true,
+      "addressType": "home",
+      "address": "Rua João Teste",
+      "number": "89",
+      "complement": "Bloco 2",
+      "city": "Porto Alegre",
+      "state": "Rio Grande do Sul",
+      "zipCode": "22222222",
+      "neighborhood": "São Luis"
     }
   ]
 }
